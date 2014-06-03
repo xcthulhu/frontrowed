@@ -1,4 +1,4 @@
 #!/bin/bash
 
-OUT=$(curl -s "http://localhost:3000/average-of-averages")
-echo $OUT
+echo "http://localhost:3000/average-of-averages =>" \
+	$(curl -s "http://localhost:3000/average-of-averages")
