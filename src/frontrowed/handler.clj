@@ -29,7 +29,7 @@
   [kv key]
   {:average
    (try+
-    (average (get @kv key))
+    (average (get @kv (keyword key)))
     (catch [:type ::not-a-number] {} nil))})
 
 (defn kv-add-key!
