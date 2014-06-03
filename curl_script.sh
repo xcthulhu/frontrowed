@@ -11,3 +11,6 @@ echo "POST http://localhost:3000/add-key?key=bar&value=7 =>" \
 
 echo "GET http://localhost:3000/key-average?key=foo =>" \
 	$(curl -s "http://localhost:3000/key-average" -G -d key=foo)
+
+echo "GET http://localhost:3000/average-of-averages =>" \
+	$(curl -s "http://localhost:3000/average-of-averages")
